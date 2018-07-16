@@ -2,10 +2,10 @@ $(function(lanzaderaa){
     var index=0;
     var index1=0;
     var index2=0;
-    var camio1 =["images/blanca.jpeg","images/blanca2.jpeg","images/blanca3.jpeg"];
-    var camio2 =["images/negra.jpeg","images/negra2.jpeg","images/negra3.jpeg"];
+    var camio1 =["images/venta/Bmw2.jpg","images/venta/Bmw3.jpg","images/venta/Bmw4.jpg","images/venta/Bmw5.jpg","images/venta/Bmw.jpg"];
+    var camio2 =["images/venta/infini2.jpg","images/venta/infini3.jpg","images/venta/infini4.jpg","images/venta/infini.jpg"];
     var camio3 =["images/tucson2.jpg","images/tucson1.jpg","images/tucson3.jpg"];
-    var time = 1500;
+    var time = 2500;
     
     $(function lanzaderaa (){
         
@@ -21,7 +21,7 @@ $(function(lanzaderaa){
        setInterval(function(){
            $("#imagenventa1").attr("src", camio1[index]);
            index++;
-           if(index==3){
+           if(index==camio1.length){
                index=0;
            }
        }, time );
@@ -33,7 +33,7 @@ $(function(lanzaderaa){
        setInterval(function(){
            $("#imagenventa2").attr("src", camio2[index1]);
            index1++;
-           if(index1==3){
+           if(index1==camio2.length){
                index1=0;
            }
        }, time );
@@ -44,7 +44,7 @@ $(function(lanzaderaa){
        setInterval(function(){
            $("#imagenventa3").attr("src", camio3[index2]);
            index2++;
-           if(index2==3){
+           if(index2==camio3.length){
                index2=0;
            }
        }, time );
